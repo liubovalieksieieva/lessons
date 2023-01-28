@@ -1,0 +1,78 @@
+/* ----------------------------- */
+
+/*------------ Reset----------- */
+
+@import url(reset.css);
+
+/* ---------------------------- */
+
+
+
+.about.text{
+	color: rgb(41, 39, 70);
+}
+
+[class*="text"] {
+	color: rgb(138, 108, 69);
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.menu.list {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+li {
+	color: rgb(41, 73, 9);
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4 {
+	color: brown;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.about span {
+	color: rgb(233, 8, 45);
+}
+
+.subtitle {
+	color: rgb(241, 86, 47);
+	font-weight: bold;
+}
+
+
+.section span {
+	color: rgb(22, 33, 82);
+}
+
+.content.text > p {
+	color: darkgreen;
+}
+
+.content span {
+	color: rgb(190, 54, 161);
+}
+
+.content.text ~ div {
+	color: rgb(126, 45, 122);
+	font-weight: bold;
+}
+
+.contacts.text + div {
+	color: rgb(21, 43, 43);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+
