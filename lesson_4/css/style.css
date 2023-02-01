@@ -1,0 +1,95 @@
+/* ----------------- */
+
+@import url(fonts.css);
+
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,700,&display=swap);
+
+
+body{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 2;
+	color: rgb(31, 43, 65);
+	text-align: center;
+	
+}
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	word-spacing: 20px;
+	color: rgba(231, 137, 13, 0.836);
+}
+
+h2,h3 {
+	font-family: "Montserrat",sans-serif;
+	font-weight: 500;
+	font-size: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px -2px 2px rgb(241, 167, 9);
+	text-decoration: underline;
+	word-spacing: 20px;
+	color: rgba(4, 34, 78, 0.952);
+}
+
+.item  {
+	font-size: 24px;
+	text-shadow: 2px -2px 1px rgb(31, 43, 65);;
+}
+
+.item .link,
+.link {
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: underline;
+	color: rgb(49, 77, 14);
+	text-shadow: none;
+}
+
+.main.title {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 34px;
+	color:rgba(231, 137, 13, 0.836);
+	text-shadow: 2px -2px 2px rgb(4, 27, 70);
+}
+
+[class*="subtitle"] {
+	font-size: 24px;
+	color: rgb(235, 60, 16);
+}
+
+.footer,
+.main.content p {
+	font-family: "Ubuntu",sans-serif;
+	font-weight: 400;
+	text-align: left;
+	text-indent: 20px;
+	font-size: 18px;
+	line-height: 1.3;
+	text-transform: none;
+	text-shadow: none;
+	color: black;
+}
+
+.footer span,
+.contacts * {
+   font-family: "CircularStd", sans-serif;
+   font-weight: bold;
+   font-size: 24px;
+   color: rgb(16, 40, 223);
+	text-align: center;
+}
+
+.footer__link + p {
+	font-weight: 500;
+	font-size: 10px;
+}
