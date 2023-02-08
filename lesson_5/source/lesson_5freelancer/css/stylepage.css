@@ -1,0 +1,40 @@
+
+@import url(reset.css);
+
+.first-block {
+	background-color:rgb(92, 133, 92) ;
+	padding: 20px;
+	margin: 20px;
+}
+.text {
+	padding: 10px 0px;
+	
+}
+
+
+.two-block {
+	background-color: rgb(131, 99, 151);
+}
+
+.item {
+	
+   font-size: 0px; 
+	margin: 20px 0 0 50px ;
+}
+.list {
+	background-color: rgb(226, 43, 205);
+	display: inline-block;
+	font-size: 54px;
+	padding: 10px;
+}
+
+section {
+	margin: 10px ;
+	outline: 2px solid red;
+	
+
+}
+p {
+	margin-bottom: 10px;
+	outline: 2px solid green;
+}
