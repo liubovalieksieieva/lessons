@@ -29,7 +29,6 @@ body {
 	font-weight: 700;
 	color: #212529;
 	margin-bottom: 40px;
-	/* max-width: 600px; */
 }
 
 h1 {
@@ -49,6 +48,7 @@ p {
 
 img{
 	max-width: 100%;
+	font-size: 14px;
 }
 
 .image-content {
