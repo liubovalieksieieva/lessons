@@ -166,7 +166,7 @@ ul li::before {
 	display: inline-block;
 	max-width: 570px;
 	padding: 125px 0 126px 0;
-	margin: 0 179px 0 0;margin-bottom: not(last-child);
+	margin: 0 179px 0 0;
 	vertical-align: middle;
 }
 
