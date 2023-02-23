@@ -296,7 +296,7 @@ footer:not(:last-child) {
 	color: #06509a;
 	text-transform: lowercase;
 	display: block;
-	font-style: 16px;
+	font-size: 16px;
 	text-decoration: underline;
 }
 .link:hover {
