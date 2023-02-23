@@ -1,0 +1,314 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700&display=swap");
+
+@import url("reset.css");
+
+
+
+header {
+	background: url(../img/background01.jpg) center / cover #212529;
+}
+
+.content {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 330px 15px  100px;
+}
+
+.title {
+	max-width: 605px;
+	font-family: "Poppins", sans-serif;
+	line-height: 1.6;
+	color: #E5E5E5;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 25px;
+	color: #F8F9FA;
+}
+
+.title > * {
+	margin: 0 0 15px 0;
+}
+
+.title > *:last-child {
+	margin: 0;
+}
+/* ---------------------------------------- */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 15px;
+	font-family: "Inter", sans-serif;
+}
+
+
+.list:not(:last-child) {
+	margin: 0 0 100px 0;
+}
+
+h2 {
+	margin: 0 0 45px 0;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 1.07;
+	color: #212B36;
+}
+ol:not(:last-child),
+ul:not(:last-child) {
+	margin: 0 0 60px 0;
+}
+
+li {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 0.9;
+	color: #637381;
+}
+ol li {
+	margin: 0 0 18px 35px;
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+ol {
+	counter-reset: item;
+}
+ol li::before {
+	counter-increment: item;
+	content: counter(item) "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.5;
+	color: #FFFFFF;
+	background-color: #3056D3;
+	margin: 0 10px 0 -35px;
+} 
+ol li:hover::before {
+	background-color: rgb(103, 126, 203);
+}
+.item li::before {
+	border-radius: 50%;
+}
+
+.rhomb li::before { 
+	transform: rotate(45deg);
+}
+
+/* -------------------------------------------- */
+ul li {
+   margin: 0 0 18px 30px; 
+}
+
+ul li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 25px;
+	min-height: 30px;
+	margin: 0 10px 0 -30px;
+}
+.ellipse >li {
+	margin: 0 0 18px 18px;
+}
+.ellipse li::before {
+	background: url(../img/ellipse.png) 0 7px / 10px no-repeat;
+	width: 10px;
+	height: 20px;
+	margin: 0 10px 0 -18px;
+	min-height: 18px;
+}
+
+.ellipse li:hover::before {
+	transform: scale(2);
+}
+
+.check-blue li::before {
+	background: url(../img/checkmark-circle.png) 0 10px / 20px no-repeat;
+}
+
+.check-green li::before {
+	background: url(../img/checkmark-circlegreen.png) 0 10px / 20px no-repeat;
+}
+
+.circle li::before {
+	background: url(../img/cross-circle.png) 0 10px / 20px no-repeat;
+}
+
+.arrow li::before {
+	background: url(../img/arrow-right.png) 0 15px / 20px no-repeat;
+}
+
+.star li::before {
+	background: url(../img/star.png) 0 10px / 20px no-repeat;
+}
+
+/* --------------------------------- */
+.section {
+	background: url(../img/background03.png) right 0 / contain no-repeat #F4F7FF;
+
+}
+
+.block {
+	font-size: 0;
+}
+
+.text {
+	display: inline-block;
+	max-width: 570px;
+	padding: 125px 0 126px 0;
+	margin: 0 179px 0 0;margin-bottom: not(last-child);
+	vertical-align: middle;
+}
+
+.text p:first-child {
+	font-weight: 600;
+	font-size: 18px;
+	color: #3056D3;
+	line-height: 1.3;
+	margin-bottom: 13px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 36px;
+	color: #212B36;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.text p {
+	font-weight: 500;
+	font-size: 16px;
+	color: #637381;
+	line-height: 1.5;
+	margin-bottom: 35px;
+}
+
+.button {
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #3056D3;
+	border-radius: 30px;
+	padding: 10px 30px;
+	margin-bottom: 35px;
+	text-transform: capitalize;
+}
+
+.button:hover {
+	background-color: rgb(72, 99, 189);
+}
+.button:active {
+	color: #212B36;
+	background-color: rgb(230, 227, 219);
+	text-decoration: underline;
+}
+.button:focus {
+   outline: 2px solid rgb(121, 57, 130);
+}
+
+
+.text >*:last-child {
+	margin-bottom: 0;
+}
+
+.image {
+	display: inline-block;
+	padding: 61px 0 63px 0;
+	max-width: 100%;
+	vertical-align: middle; 
+	font-size: 16px;
+}
+
+/* ----------------------------------- */
+footer {
+	background-color: rgba(106, 109, 111, 0.514);
+}
+footer:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+.test :nth-child(odd) {
+	color: crimson;
+}
+
+.test li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	background: 0 5px / cover  no-repeat blue;
+	border-radius: 50%;
+}
+
+.test li:hover::before {
+	background-color: rgba(210, 219, 40, 0.934);
+}
+.test li:hover {
+	color: #212529;
+}
+.example li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	background: 0 5px / cover no-repeat rgb(12, 125, 25);
+	border-radius: 50%;
+}
+.example li::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	min-height: 10px;
+	background: url(../img/arrow-right.png) 0 2px / 20px no-repeat;
+	margin-left: 10px;
+}
+.example li:nth-child(even) {
+	color: goldenrod;
+}
+.example li:hover {
+	color: #212529;
+}
+.warning {
+	color: red;
+	text-decoration: underline;
+	text-transform: uppercase;
+	
+}
+.link {
+	color: #06509a;
+	text-transform: lowercase;
+	display: block;
+	font-style: 16px;
+	text-decoration: underline;
+}
+.link:hover {
+	color: brown;
+}
+.open-block {
+	display: none;
+}
+.open-block:target {
+	display: block;
+}
+
+footer >* :not(:last-child) {
+	margin-bottom: 15px;
+}
