@@ -1,0 +1,228 @@
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("reset.css");
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	background-color: #E5E5E5;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.header__content { 
+	color: #212B36;
+	font-weight: 600;
+	line-height: 1.5;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50; 
+	background-color: #ffffff;
+	padding: 30px 0px;
+}   
+
+[class*="container"] {
+	max-width: 1240px; 
+	margin: 0 auto;
+	padding: 0 15px;  
+}
+.header__container > div {
+	display: inline-block;
+} 
+.header__logo,
+.header__menu {
+	margin: 0 44px 0 0;
+}
+.header__menu--margin {
+	margin: 0 154px 0 0;
+}
+
+.menu__item {
+	display: inline-block;
+	position: relative;
+	z-index: 2; 
+}
+.menu__item:not(:last-child) {
+	margin: 0 35px 0 0;
+}
+
+.menu__item--background {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 9px 20px;  
+	text-align: center;
+	line-height: 1.2;
+}
+[class*="__item"]:hover {
+	color: #3056D3;
+}
+.menu__item--background:hover {
+	color: #212B36;
+	background-color: #F4F7FF;
+}
+
+.menu__item--background::after,
+.menu__item--actions::after{
+	display: inline-block;
+	content: "";
+	background: url(../img/menu_point.svg) 0 7px / 100% no-repeat;  
+	width: 10px;
+	height: 15px;
+	margin-left: 13px; 
+}
+
+.sub-menu__item--background::after {
+	display: inline-block;
+	content: "";
+	background: url(../img/menu_point.svg) 0 7px / 100% no-repeat; 
+	width: 11px;
+	height: 15px;
+	margin-left: 48px; 
+}
+.sub-menu__item--background:hover::after {
+	background: url(../img/arrow.svg) 0 2.5px / 6px no-repeat; 
+} 
+.menu__sub-menu {
+	border: 1px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 22px 24px; 
+	color: #637381;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	min-width: 180px;
+	position: absolute;
+	top: 200%;
+	left: 0;
+	z-index: 1;
+	display: none;    
+	background-color: #ffffff;
+	text-align: left;
+}
+.menu__sub-menu::before {
+	display: inline-block;
+	content: "";
+	border-bottom: 20px solid #ffffff;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	position: absolute;
+	top: -10px;
+	left: 10px;
+}
+.menu__sub-menu::after {
+	display: inline-block;
+	content: "";
+	width: 180px;
+	height: 50px;
+	position: absolute;
+	top: -45px;
+	left: 0;
+}
+.menu__item:hover .sub-menu {
+	display: block;
+}
+.sub-menu__item:not(:last-child) {
+	margin: 0 0 13px 0;
+}
+
+.sub-menu__item:hover .active-menu {
+	display: block;
+}
+.sub-menu__active-menu {
+	border: 0.5px solid #E7E7E7;
+	color: #637381;
+	border-radius: 5px;
+	padding: 30px;
+	position: absolute;
+	top: 10%;
+	left: 178px;
+	min-width: 180px;
+	display: none; 
+	background-color: #ffffff;
+}
+.sub-menu__active-menu::before {
+	display: inline-block;
+	content: "";
+	width: 180px;
+	height: 28px;
+	position: absolute;
+	top: 30px;
+	left: -50px;
+}
+
+.active-menu__link--style {
+	color: #212B36;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+.active-menu__link:hover {
+	color: #3056D3;
+}
+.active-menu__link--style:hover {
+	color: #212B36;
+}
+.active-menu__item:not(:last-child) {
+	margin: 0 0 12px 0;
+}
+/* ------------------------------------------- */
+
+.icon__favorite:not(:last-child) {
+	margin: 0 20px 0 0;
+}
+.icon__favorite {
+	position: relative;
+}
+.icon__value {
+	border-radius: 50%;
+	background-color: #3056D3;
+	color: #ffff;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 400;
+	position: absolute;
+	top: -5px;
+	left: 15px;
+}
+/* ------------------------------------------------- */
+
+.main {
+	padding: 130px 0 0 0; 
+}
+
+
+.block__title {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 10px;
+	background-color: rgb(80, 118, 255);
+	position: sticky;
+	top: 100px;
+	left: -20px;
+	z-index: 3;
+	
+}
+.block__title--sticky {
+	position: sticky;
+	top: 130px;
+	left: 0;
+	background-color: #637381;
+}
+
+.block__text {
+	background-color: rgba(254, 209, 6, 0.582);
+	padding: 10px;
+	position: relative;
+	top: -10px;
+	left: -40px;
+	z-index: 2;
+}
+
+
+
