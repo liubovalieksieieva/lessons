@@ -52,7 +52,13 @@ main {
 .menu__list--gap {
 	gap: 20px;
 }
-
+img {
+	max-width: 100%;
+}
+img:hover {
+	transform: scale(1.05);
+	transition: all 0.5s;
+}
 .main__cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -60,6 +66,10 @@ main {
 	column-gap: 30px;
 	row-gap: 45px;
 	padding: 0 0 60px 0;
+}
+.title:hover {
+	opacity: 0.8;
+	text-decoration: underline;
 }
 .cards__image {
 	flex-grow: 1;
