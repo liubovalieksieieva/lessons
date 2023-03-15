@@ -23,7 +23,7 @@ main {
 	justify-content: space-between;
 	column-gap: 30px;
 	font-family: "Poppins", sans-serif;
-	font-style: 12px;
+	font-size: 12px;
 	font-weight: 500;
 	color: #495057;
 	line-height: 2.08;
