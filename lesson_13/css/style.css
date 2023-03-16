@@ -1,0 +1,76 @@
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.container {
+	background: url("../img/image.jpg") 0 0 / 100% 100% no-repeat;
+	height: 1000px;
+}
+.container__image {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.image__betman {
+	position: absolute;
+	top: 0;
+	right: -20%;
+	animation: betman 8s 5s forwards;
+	width: 100px;
+	height: 50px;
+	opacity: 0;
+}
+
+.image__photo {
+	position: absolute;
+	top: 150px;
+	left: 240px;
+	height: 50px;
+	width: 50px;
+	animation: spiderman 8s forwards;
+}
+.image__ship {
+	position: absolute;
+	top: 650px;
+	left: 0;
+	animation: ship 8s forwards;
+}
+@keyframes ship {
+	0%{
+		transform: translate(0px, 0px);
+	}
+	30%{
+		transform: translate(20%, 0px);
+	}
+	100%{
+		transform: translate(2000px, -85px) scale(0.5);
+	}
+}
+	
+@keyframes spiderman {
+	0%{
+		transform: translate(0);
+	}
+	30%{
+		transform: translate(0px, 595px) scale(2.3);
+	}
+	100% {
+		transform: translate(2000px, 550px) scale(0.8);
+	}
+}
+@keyframes betman {
+	0%{
+		transform: translate(-100%, 0px);
+		opacity: 1;
+	}
+	
+	100%{
+		transform: translate(-3000px, 600px) scale(4.5);
+		opacity: 1;
+	}
+}
+img {
+	max-width: 100%;
+}
