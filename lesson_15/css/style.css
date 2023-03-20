@@ -1,0 +1,105 @@
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: #9C9C9C;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 100px 0;
+}
+main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.page__services {
+	padding: 0 0 100px 0;
+}
+.cards__card,
+.block_image img {
+	max-width: 100%;
+}
+.services__cards {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
+}
+.cards__block {
+	display: flex;
+	align-items: center;
+	margin: 0 -60px;
+}
+.block__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 60px;
+}
+.block__image {
+	padding: 0 60px;
+	transition: all 0.8s;
+}
+
+/* ---------------------------------------------------- */
+.portfolio__block {
+	padding: 0 0 53px 0;
+}
+.portfolio__block *:not(:last-child) {
+	margin-bottom: 40px;
+}
+.block-image__photo {
+	padding: 0 0 100px 0;
+}
+.block-image__content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+	
+}
+.content__information {
+	padding: 0 16px;
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+}
+.portfolio__block-image {
+	padding: 0 0 82px 0;
+}
+.information__block-title {
+	padding: 0 0 24px 0;
+}
+.information__group {
+	display: inline-flex;
+	gap: 80px;
+}
+.text__some-text:not(:last-child) {
+	padding-bottom: 30px;
+}
+
+.information__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.portfolio__cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+.card {
+	transition: all 0.5s;
+}
+.card:hover {
+	transform: scale(1.05);
+	transition: all 0.5s;
+}
