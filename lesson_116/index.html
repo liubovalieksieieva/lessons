@@ -30,7 +30,7 @@
 								</div>
 								<div class="form__item item">
 									<div class="item__country country">
-										<select required  name="country-list" class="item__list">
+										<select required multiple name="country-list" class="item__list">
 											<option selected value="1">Country*</option>
 											<option value="2">Ukraine</option>
 											<option value="3">Poland</option>
@@ -58,7 +58,7 @@
 							</div>
 							<div class="registration-form__create-account create-account">
 								<div class="create-account__radio radio">
-									<input checked class="radio__input" required name="account" value="create-account" autocomplete="off" type="radio" id="account">
+									<input checked class="radio__input" required name="account" value="create-account"  type="radio" id="account">
 									<label class="radio__label" for="account">Create Account</label>
 								</div>
 								<div class="create-account__radio radio">
@@ -121,10 +121,10 @@
 									<div class="line__subitem"><input class="line__input" required autocomplete="off" type="text" name="address" value="" id="address"></div>
 								</div>
 								<div class="line__velue line__velue--size value">
-									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value="" id="address"></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value=""></div>
 								</div>
 								<div class="line__velue line__velue--size value">
-									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value="" id="address"></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value=""></div>
 								</div>
 								<div class="line__velue value">
 									<div class="line__subitem"><label class="line__label" for="country">Country <span class="star">*</span></label></div>
@@ -144,7 +144,7 @@
 								<div class="autorization-form__option autorization-form__option--design option">
 									<div class="option__radio-item radio-item">
 										<div class="radio-item__method method">
-											<input class="radio-item__choice" id="price01" required autocomplete="off" name="price" value="1" type="radio">
+											<input class="radio-item__choice" id="price01" required name="price" value="1" type="radio">
 											<label class="radio-item__label radio-item__label--price" for="price01">$5.00</label>
 										</div>
 											<span class="radio-item__label">Fixed</span>
@@ -154,7 +154,7 @@
 								<div class="autorization-form__option option">
 									<div class="option__radio-item radio-item">
 										<div class="radio-item__method method">
-											<input class="radio-item__choice" id="price02" required autocomplete="off" name="price" value="2" type="radio">
+											<input class="radio-item__choice" id="price02" required name="price" value="2" type="radio">
 											<label class="radio-item__label radio-item__label--price" for="price02">$10.00</label>
 										</div>
 											<span class="radio-item__label">Table Rate</span>
