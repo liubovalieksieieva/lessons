@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework 16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header></header>
+
+		<main class="main">
+			<div class="page">
+				<div class="page__container">
+					<div class="page__block block">
+						<h1 class="block__title title">Checkout</h1>
+						<h2 class="block__subtitle">There are 3 products in your cart</h2>
+						<h2 class="block__some-titile">Billing Details</h2>
+						<form action="#" method="post" enctype="multipart/form-data" class="registration-form">
+							<div class="registration-form__form form">
+								<div class="form__item item">
+									<div class="item__name name"><input required type="text" name="first-name" value="" placeholder="First name*" class="name__input"></div>
+									<div class="item__name name"><input required type="text" name="last-name" value="" placeholder="Last name*" class="name__input"></div>
+								</div>
+								<div class="form__item item">
+									<div class="item__address address"><input required type="text" name="address" value="" placeholder="Address*" class="address__input"></div>
+									<div class="item__address address"><input type="text" name="address-line-2" value="" placeholder="Address line 2" class="address__input"></div>
+								</div>
+								<div class="form__item item">
+									<div class="item__country country">
+										<select required type="text" name="country-list" class="item__list">
+											<option value="1">Country*</option>
+											<option value="2">Ukraine</option>
+											<option value="3">Poland</option>
+											<option value="4">Great Britain</option>
+											<option value="5">Germany</option>
+											<option value="6">France</option>
+											<option value="7">Lithuania</option>
+											<option value="8">Italy</option>
+											<option value="9">Spain</option>
+										</select>
+									</div>
+									<div class="item__city city"><input required type="text" name="city-town" value="" placeholder="City/Town*" class="city__input"></div>
+								</div>
+								<div class="form__item item">
+									<div class="item__phone phone"><input required type="number" name="postcode" value="" placeholder="Postcode / ZIP*" class="phone__input"></div>
+									<div class="item__phone phone"><input required type="number" name="phone*" value="" placeholder="Phone*" class="phone__input"></div>
+								</div>
+								<div class="form__item item">
+									<div class="item__phone phone"><input required type="number" name="postcode" value="" placeholder="Postcode / ZIP*" class="phone__input"></div>
+									<div class="item__phone phone"><input required type="number" name="phone*" value="" placeholder="Phone*" class="phone__input"></div>
+								</div>
+								<div class="form__item form__item--padding item">
+									<textarea id="textarea" autocomplete="off" name="message" class="item__information-textarea">Additional informatio</textarea>
+								</div>
+							</div>
+							<div class="registration-form__create-account create-account">
+								<div class="create-account__radio radio">
+									<input checked class="radio__input" required name="account" velue="create-account" autocomplete="off" type="radio" id="account">
+									<label class="radio__label" for="account">Create Account</label>
+								</div>
+								<div class="create-account__radio radio">
+									<input class="radio__input" required name="account" autocomplete="off" value="different-address" type="radio" id="different-address">
+									<label class="radio__label" for="different-address">Ship to a different address?</label>
+								</div>
+							</div>
+							<div class="registration-form__discount discount">
+								<h2 class="discount__title-code">Apply Coupon to get discount!</h2>
+								<div class="discount__promocode">
+									<input class="discount__input" type="number" placeholder="Coupon code" name="coupon-code" value="">
+									<button type="submit" class="discount__button button">Apply Code</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div> <!--page__container-->
+				<div class="page__container page__container--size">
+					<div class="page__section section">
+						<h3 class="section__title-form title-form">Shipping Address</h3>
+						<form class="autorization-form" action="#" enctype="multipart/form-data" method="post">
+							<div class="autorization-form__line line">
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="email">Email Address <span class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" required type="email" id="email" name="email" value="" placeholder="roni_cost@example.com"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="password">Password</label></div>
+									<div class="line__subitem"><input class="line__input" required name="password" value="" id="password" type="password" placeholder="******************"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="code">Zip/Postal Code</label></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="number" name="code" value="" id="code"></div>
+								</div>
+							</div>
+							<div class="autorization-form__text text">You already have an account with us. Sign in or continue as guest.</div>
+							<div class="autorization-form__button autorization-form__button--decor button">
+								<button class="button__submit" type="submit">login</button>
+								<a class="button__link link" href="#" target="_blank">Forgot Your Password?</a>
+							</div>
+						</form>
+					</div>
+					<div class="page__section section">
+						<form class="autorization-form" action="#" enctype="multipart/form-data" method="post">
+							<div class="autorization-form__line line">
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="first-name">First Name<span class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" required type="text" id="first-name" name="first-name" value=""></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="last-name">Last Name<span class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" required name="last-name" value="" id="last-name" type="text"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="company">Company</label></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="company" value="" id="company"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="address">Street Address <span  class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" required autocomplete="off" type="text" name="address" value="" id="address"></div>
+								</div>
+								<div class="line__velue line__velue--size value">
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value="" id="address"></div>
+								</div>
+								<div class="line__velue line__velue--size value">
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="address" value="" id="address"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="country">Country <span class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="country" value="" id="country"></div>
+								</div>
+								<div class="line__velue value">
+									<div class="line__subitem"><label class="line__label" for="region">ZState/Province <span class="star">*</span></label></div>
+									<div class="line__subitem"><input class="line__input" autocomplete="off" type="text" name="region" value="" id="region" placeholder="Please select a region, state or province"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="page__section section">
+						<h3 class="section__title-form section__title-form--margin title-form">Shipping Methods</h3>
+						<form class="autorization-form" action="#" enctype="multipart/form-data" method="post">
+							<div class="autorization-form__radio">
+								<div class="autorization-form__option autorization-form__option--design option">
+									<div class="option__radio-item radio-item">
+										<div class="radio-item__method method">
+											<input class="radio-item__choice" id="price01" required autocomplete="off" name="price" value="1" type="radio">
+											<label class="radio-item__label radio-item__label--price" for="price01">$5.00</label>
+										</div>
+											<span class="radio-item__label">Fixed</span>
+											<span class="radio-item__label">Flat Rate</span>
+									</div>
+								</div>
+								<div class="autorization-form__option option">
+									<div class="option__radio-item radio-item">
+										<div class="radio-item__method method">
+											<input class="radio-item__choice" id="price02" required autocomplete="off" name="price" value="2" type="radio">
+											<label class="radio-item__label radio-item__label--price" for="price02">$10.00</label>
+										</div>
+											<span class="radio-item__label">Table Rate</span>
+											<span class="radio-item__label">Best Way</span>
+									</div>
+								</div>
+							</div>
+							<div class="autorization-form__button autorization-form__button--flex button">
+								<button class="button__submit" type="submit">next</button>
+								<a class="button__link button__link--back link" href="#" target="_blank">Back</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!--page-->
+		</main>
+
+		<footer></footer>
+
+	</div> <!--wrapper-->
+	
+</body>
+</html>
