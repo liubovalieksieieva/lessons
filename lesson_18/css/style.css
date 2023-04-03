@@ -363,6 +363,7 @@ body {
 	display: flex;
 	padding: 0 15px;
 	flex-direction: column;
+	gap: 30px;
 }
 .block-column__text {
 	display: flex;
