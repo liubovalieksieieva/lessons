@@ -177,9 +177,23 @@ body {
 	color: #E5E5E5;
 }
 
-.part__background img,
+/* .part__background img,
 .content__background img {
 	max-width: 100%;
+} */
+.part__background,
+.content__background {
+	position: relative;
+	padding-bottom: 40.322580645%;
+}
+.part__background img,
+.content__background img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .articles__container {
@@ -188,15 +202,14 @@ body {
 }
 .articles__block {
 	display: flex;
-	gap: 30px;
+	margin: 0 -15px;
 	margin-bottom: 60px;
 }
 
 .block__options {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
-	
+	padding: 0 15px;
 }
 .block__link::before {
 	display: inline-block;
@@ -210,13 +223,16 @@ body {
 .block__categories {
 	display: flex;
 	flex-wrap: wrap;
-	flex: 1 1 605px;
-	gap: 40px;
+	flex: 0 1 58.8521400778%;
+	margin-bottom: 40px;
+	padding: 0 15px;
+	gap: 30px;
 }
+
 .block__category {
 	display: flex;
-	gap: 30px;
-	
+	margin: 0 -15px;
+	flex: 0 1 100%;
 }
 
 .filter__list {
@@ -233,17 +249,30 @@ body {
 	margin-right: 10px;
 }
 
+
 .category__image {
-	flex: 0 1 288px;
+	position: relative;
+	padding-bottom: 69.444444444%;
+	padding: 0 15px; 
+	flex: 0 1 50%;
 }
 .category__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	max-width: 100%;
+	padding: 0 15px;
 }
+
 .category__column {
 	display: flex;
 	flex-direction: column;
+	padding: 0 15px;
 	gap: 15px;
-	flex: 0 1 287px;
+	flex: 0 1 50%;
 }
 .category__autor {
 	display: inline-flex;
@@ -307,18 +336,32 @@ body {
 	color: #495057;
 }
 
+.block-column__image {
+	position: relative;
+	padding-bottom: 63.61323155%;
+}
+
 .block-column__image img {
 	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
+
+
 .block-column {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	margin: 0 -15px;
 }
 .block-column__row {
-	flex: 0 1 393px;
+	flex: 0 1 33.333%;
 	display: flex;
-	gap: 30px;
+	padding: 0 15px;
+	margin-bottom: 30px;
 	flex-direction: column;
 }
 .block-column__text {
@@ -378,6 +421,7 @@ body {
 /*-----------------------------------------------*/
 
 /* -------------адаптив----------- */
+
 @media (max-width: 980px) {
 	.collection__block-navigation{
 		flex-direction: column;
@@ -402,11 +446,16 @@ body {
 	.block__category {
 		justify-content: center;
 	}
-	
+	.block-column__row {
+		flex: 0 1 50%;
+	}
 }
 @media (max-width: 768.98px) {
 	.header__container {
 		min-height: 50px;
+	}
+	.block-column__row {
+		flex: 0 1 100%;
 	}
 }
 
@@ -624,3 +673,4 @@ body {
 	}
 
 }
+
