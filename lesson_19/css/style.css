@@ -51,6 +51,7 @@ body {
 
 .articles__block {
 	position: relative;
+	/* padding-bottom: 41,88034188% , */
 }
 .articles__content {
 	padding: 40px 168px 344px 40px;
@@ -448,15 +449,15 @@ body {
 	.section__articles {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, auto);
+		/* grid-template-rows: repeat(3, auto); */
 		gap: 15px;
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	.section__cards {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 20px;
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	.title {
 	   font-size: 30px;
@@ -481,7 +482,7 @@ body {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 20px;
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 		.description__price--blue {
 			font-size: 20px;
@@ -490,7 +491,7 @@ body {
 			display: grid;
 			grid-template-columns: 1fr;
 			gap: 30px;
-			padding: 0 15px;
+			/* padding: 0 15px; */
 	}
 		.section__card-products:nth-child(2) {
 			grid-column: span 7;
@@ -507,20 +508,20 @@ body {
 		gap: 30px;
 	}
 	.section__item {
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	.section__top-collections {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		padding: 0 15px;
+		/* padding: 0 15px; */
 		gap: 20px;
 	}
 	.section__text {
 		grid-template-columns: repeat(1, 1fr);
-		padding: 0 15px;
+		/* padding: 0 15px; */
    }
 	.section__portfolio {
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	.portfolio__image:not(:last-child) {
 		margin-bottom: 30px;
@@ -540,7 +541,7 @@ body {
 			align-self: flex-start;
 		}
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 630px) {
 	.articles__content {
 		padding: 40px 168px 344px 20px;
 	}
@@ -570,13 +571,31 @@ body {
 @media (max-width: 520px) {
 	.title,
 	.some-title {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.section__button {
 		padding: 8px 15px;
 	}
+	.articles__content {
+		padding: 100px 0px 100px 20px;
+		max-width: 250px;
+	}
+	.articles__content--padding {
+		padding: 100px 0px 100px 20px;
+	}
 }
 
-@media (max-width: 390px) {
-	
+@media (max-width: 490px) {
+	.articles__content {
+			padding: 50px 0 50px 10px;
+		}
+		.articles__content--padding {
+			padding: 50px 0 50px 10px;
+		}
+}
+@media (max-width: 380px) {
+	.articles__content {
+		max-width: 150px;
+		padding: 50px 0 50px 15px;
+	}
 }
