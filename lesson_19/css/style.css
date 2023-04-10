@@ -13,7 +13,7 @@ body {
 	color: #637381;
 }
 .wrapper {
-	overflow: hidden;
+	overflow: clip;
 	min-height: 100%;
 	position: relative;
 	display: flex;
@@ -35,9 +35,7 @@ body {
 	margin-bottom: 80px;
 }
 /* ----------------------------- */
-.articles__content {
-	max-width: 63.5%;
-}
+
 .articles__content > *:not(:last-child) {
 	display: block;
 	margin-bottom: 12px;
@@ -53,21 +51,14 @@ body {
 
 .articles__block {
 	position: relative;
-	
 }
 .articles__content {
-	position: absolute;
-	top: 40px;
-	left: 40px;
+	padding: 40px 168px 344px 40px;
+	
 }
-
-.articles__image {
-	position: relative;
-	padding-bottom: 40.350877193%;
-}
-.articles__image--size {
-	padding-bottom: 85.964912281%;
-	max-width: 100%;
+.articles__content--padding{
+	padding: 40px 168px 80px 40px;
+	
 }
 .articles__image img {
 	position: absolute;
@@ -76,7 +67,14 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: right;
+	z-index: -1;
+	max-width: 100%;
 }
+.articles__image--size img {
+	object-position: left;
+}
+
 /* ------------------------------- */
 .page__section--background {
 	background-color: #fafafa;
@@ -105,6 +103,9 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
+
+
+
 .cards__products {
 	border: 1px solid #E7E7E7;
 	border-radius: 8px;
@@ -272,7 +273,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 70px;
 }
 .section__button {
 	align-self: flex-end;
@@ -390,6 +390,8 @@ body {
 	top: 0;
 	left: 0;
 }
+
+
 
 /* ------------адаптив--------------------- */
 
@@ -538,14 +540,18 @@ body {
 			align-self: flex-start;
 		}
 }
+@media (max-width: 1200px) {
+	.articles__content {
+		padding: 40px 168px 344px 20px;
+	}
 
+	.articles__content--padding {
+		padding: 40px 250px 150px 20px;
+		
+	}
+}
 
 @media (max-width: 991.98px) and (min-width: 839.98px) {
-	.articles__content {
-		position: absolute;
-		top: 30px;
-		left: 30px;
-	}
 	.title {
 		font-size: 30px;
 	}
@@ -572,9 +578,5 @@ body {
 }
 
 @media (max-width: 390px) {
-	.articles__content {
-		position: absolute;
-		top: 20px;
-		left: 20px;
-	}
+	
 }
