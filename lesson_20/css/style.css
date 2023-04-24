@@ -140,9 +140,9 @@ button {
   border: 2px solid #000000;
   text-transform: uppercase;
   padding: 15px 40px;
-  -webkit-transition: background-color 5s, color 0.8s;
-  -o-transition: background-color 5s, color 0.8s;
-  transition: background-color 5s, color 0.8s;
+  -webkit-transition: background-color 0.8s, color 0.8s;
+  -o-transition: background-color 0.8s, color 0.8s;
+  transition: background-color 0.8s, color 0.8s;
 }
 @media (max-width: 1650px) {
   .button {
@@ -959,15 +959,15 @@ body {
   }
 }
 
-.some-titile {
+.some-title {
   border-right: 2px solid #000;
 }
 @media (max-width: 767.98px) {
-  .some-titile {
+  .some-title {
     border-right: none;
   }
 }
-.some-titile::before {
+.some-title::before {
   display: block;
   content: "";
   max-width: 602px;
@@ -976,7 +976,7 @@ body {
   margin: 0 0 19px 37px;
 }
 @media (max-width: 767.98px) {
-  .some-titile::before {
+  .some-title::before {
     background-color: transparent;
   }
 }
@@ -1132,6 +1132,12 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+@media (max-width: 767.98px) {
+  .banner-block__button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 
 .page__section--background {

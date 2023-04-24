@@ -647,7 +647,7 @@ body {
 
 .text {}
 
-.some-titile {
+.some-title {
 	border-right: 2px solid #000;
 	@media (max-width: 767.98px) {
 		border-right: none;
@@ -819,6 +819,9 @@ body {
 	&__button {
 		align-self: flex-start;
 		flex: 0 0 auto;
+		@media (max-width: 767.98px){
+			align-self: center;
+		}
 	}
 }
 
